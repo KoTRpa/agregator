@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Example extends Component {
+ class Main extends Component {
     render() {
         return (
             <div className="container">
@@ -21,6 +21,9 @@ export default class Example extends Component {
     }
 }
 
-if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
+export default Main;
+
+if (document.getElementById('root')) {
+    ReactDOM.render(<Main />, document.getElementById('root'));
 }
+
