@@ -10,11 +10,14 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    {{-- <link href="https://bootswatch.com/cosmo/bootstrap.css" rel="stylesheet"> --}}
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
-    <div id="app">
+    <div id="apps">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">

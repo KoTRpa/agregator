@@ -13,4 +13,14 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import Main from './components/Main';
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import {Router, Route, IndexRoute, browserHistory} from "react-router";
+
+import Categories from './components/Categories';
+
+const appContainer = document.getElementById('app');
+
+if (appContainer) {
+    ReactDOM.render(<Categories />, appContainer);
+}
