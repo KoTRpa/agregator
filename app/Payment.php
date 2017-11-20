@@ -17,4 +17,19 @@ class Payment extends Model
     protected $fillable = [
         'user_id', 'amount', 'direction', 'billing_id', 'category_id', 'comment'
     ];
+
+    public function user()
+    {
+        return $this->belognsTo('App\User');
+    }
+
+    public function billing()
+    {
+        return $this->belognsTo('App\Billing');
+    }
+
+    public function category()
+    {
+        return $this->belognsTo('App\Category');
+    }
 }

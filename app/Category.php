@@ -14,4 +14,11 @@ class Category extends Model
     protected $fillable = [
         'title', 'comment',
     ];
+
+    public $timestamps = false;
+
+    public function payments()
+    {
+        return $this->hasMany('App\Payment');
+    }
 }

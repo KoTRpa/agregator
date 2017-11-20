@@ -14,4 +14,9 @@ class Billing extends Model
     protected $fillable = [
         'title',
     ];
+
+    public function payments()
+    {
+        return $this->hasMany('App\Payment');
+    }
 }
