@@ -17,10 +17,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import {Router, Route, IndexRoute, browserHistory} from "react-router";
 
-import Categories from './components/Categories';
+import Layout from './components/Layout';
 
 const appContainer = document.getElementById('app');
 
 if (appContainer) {
-    ReactDOM.render(<Categories />, appContainer);
+    ReactDOM.render(<Layout />, appContainer);
 }

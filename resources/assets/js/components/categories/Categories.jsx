@@ -6,12 +6,14 @@ export default class Categories extends Component {
 
         super();
 
+        console.log('cat', this.state);
         this.state = {
             categories: [],
         }
     }
 
     componentDidMount() {
+
         fetch('/api/categories')
             .then(response => {
                 return response.json()
